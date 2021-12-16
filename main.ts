@@ -37,6 +37,13 @@ input.onButtonPressed(Button.A, function () {
             . . . . .
             `)
         basic.clearScreen()
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
         basic.showString("EATING..." + "SCORE:" + Score)
         basic.pause(500)
         basic.clearScreen()
@@ -89,6 +96,13 @@ input.onButtonPressed(Button.B, function () {
             . . . . .
             `)
         basic.clearScreen()
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
         basic.showString("SLEEPING..." + "SCORE:" + Score)
         basic.pause(500)
         basic.clearScreen()
@@ -222,4 +236,38 @@ basic.forever(function () {
         basic.showString("SCORE:")
         basic.showString("" + (Score))
     }
+})
+basic.forever(function () {
+    music.playTone(330, music.beat(BeatFraction.Whole))
+    music.playTone(330, music.beat(BeatFraction.Whole))
+    music.playTone(330, music.beat(BeatFraction.Double))
+    music.playTone(330, music.beat(BeatFraction.Whole))
+    music.playTone(330, music.beat(BeatFraction.Whole))
+    music.playTone(330, music.beat(BeatFraction.Whole))
+    music.playTone(330, music.beat(BeatFraction.Double))
+    music.playTone(330, music.beat(BeatFraction.Whole))
+    music.playTone(330, music.beat(BeatFraction.Whole))
+    music.playTone(392, music.beat(BeatFraction.Whole))
+    music.playTone(262, music.beat(BeatFraction.Whole))
+    music.playTone(294, music.beat(BeatFraction.Whole))
+    music.playTone(330, music.beat(BeatFraction.Whole))
+    music.playTone(349, music.beat(BeatFraction.Whole))
+    music.playTone(349, music.beat(BeatFraction.Whole))
+    music.playTone(349, music.beat(BeatFraction.Whole))
+    music.playTone(349, music.beat(BeatFraction.Whole))
+    music.playTone(349, music.beat(BeatFraction.Whole))
+    music.playTone(330, music.beat(BeatFraction.Whole))
+    music.playTone(330, music.beat(BeatFraction.Whole))
+    music.playTone(330, music.beat(BeatFraction.Whole))
+    music.playTone(392, music.beat(BeatFraction.Whole))
+    music.playTone(392, music.beat(BeatFraction.Whole))
+    music.playTone(349, music.beat(BeatFraction.Whole))
+    music.playTone(294, music.beat(BeatFraction.Whole))
+    music.playTone(262, music.beat(BeatFraction.Whole))
+})
+basic.forever(function () {
+	
+})
+basic.forever(function () {
+	
 })
