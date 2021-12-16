@@ -185,24 +185,6 @@ basic.forever(function () {
         Hungry = false
         Sleepy = false
     }
-    if (Hungry == true) {
-        basic.showLeds(`
-            . . . . .
-            . # . # .
-            . . . . .
-            . # # # .
-            # . . . #
-            `)
-    }
-    if (Sleepy == true) {
-        basic.showLeds(`
-            . . . . .
-            . # . # .
-            . . . . .
-            . # # # .
-            # . . . #
-            `)
-    }
     if ((Hungry == true || Sleepy == true) && Unhappy_Timer == 0) {
         Dead = true
     }
